@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kejutan Untuk Kamu 💌</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#fff0f5,#ffe1ec,#ffd0df);
+    color:#5a2438;
+}
+
+.start{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:10;
+    background:linear-gradient(135deg,#ffb6cf,#ffeaf2);
+    transition:1s;
+}
+
+.start-box{
+    padding:30px;
+}
+
+.heart{
+    font-size:75px;
+    animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.15)}
+}
+
+.start h1{
+    font-size:32px;
+    margin:15px 0 10px;
+}
+
+.start p{
+    color:#87445d;
+    margin-bottom:25px;
+}
+
+button{
+    border:none;
+    padding:15px 28px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ff4f87,#ff86aa);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(255,70,130,.35);
+    cursor:pointer;
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+.main{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.card{
+    width:100%;
+    max-width:550px;
+    padding:35px 25px;
+    text-align:center;
+    background:rgba(255,255,255,.78);
+    border:1px solid rgba(255,255,255,.9);
+    border-radius:25px;
+    box-shadow:0 15px 50px rgba(150,50,90,.18);
+    backdrop-filter:blur(12px);
+}
+
+.card h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.small{
+    color:#a05b74;
+    margin-bottom:25px;
+}
+
+.message{
+    line-height:1.9;
+    font-size:16px;
+    margin-bottom:25px;
+}
+
+.highlight{
+    color:#ff3e79;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.signature{
+    margin-top:25px;
+    font-weight:bold;
+    font-size:18px;
+    color:#ff3e79;
+}
+
+.floating-heart{
+    position:fixed;
+    bottom:-30px;
+    animation:float 6s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.confetti{
+    position:fixed;
+    width:8px;
+    height:8px;
+    top:-10px;
+    background:#ff4f87;
+    animation:fall 4s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+    }
+}
+
+.hidden{
+    opacity:0;
+    pointer-events:none;
+}
+
+.extra{
+    display:none;
+    margin-top:25px;
+    padding:20px;
+    border-radius:18px;
+    background:#fff5f8;
+    color:#713449;
+    line-height:1.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HALAMAN PEMBUKA -->
+
+<div class="start" id="start">
+
+    <div class="start-box">
+
+        <div class="heart">💌</div>
+
+        <h1>Hai, kamu... 🥺</h1>
+
+        <p>
+            Aku punya sesuatu kecil buat kamu.<br>
+            Jangan langsung pergi ya 😳
+        </p>
+
+        <button onclick="openSurprise()">
+            BUKA KEJUTAN 💖
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ISI WEBSITE -->
+
+<main class="main">
+
+    <div class="card">
+
+        <div style="font-size:55px;">
+            💗
+        </div>
+
+        <h1>Untuk Kamu ❤️</h1>
+
+        <p class="small">
+            Ada sesuatu yang ingin aku sampaikan...
+        </p>
+
+        <div class="message">
+
+            Aku mungkin nggak selalu pandai
+            mengungkapkan perasaan.
+
+            <br><br>
+
+            Kadang aku juga nggak tahu harus
+            bilang apa ketika sedang memikirkan kamu.
+
+            <br><br>
+
+            Tapi aku ingin kamu tahu...
+
+            <br><br>
+
+            <span class="highlight">
+                Aku bersyukur bisa mengenal kamu. ❤️
+            </span>
+
+            <br><br>
+
+            Dari sekian banyak orang yang aku temui,
+            entah kenapa hatiku memilih kamu.
+
+            <br><br>
+
+            Terima kasih karena sudah hadir di hidupku.
+            Terima kasih untuk setiap perhatian kecil,
+            setiap cerita, setiap tawa, dan setiap waktu
+            yang kita habiskan bersama.
+
+            <br><br>
+
+            Mungkin hubungan kita nggak selalu sempurna.
+            Pasti ada hari ketika kita berbeda pendapat,
+            ada salah paham, atau ada hal yang membuat
+            kita sama-sama kesal.
+
+            <br><br>
+
+            Tapi aku nggak mencari hubungan yang sempurna.
+            Aku cuma ingin kita terus belajar untuk
+            saling memahami, saling menghargai,
+            dan saling menjaga.
+
+            <br><br>
+
+            Kalau suatu hari kamu merasa capek,
+            semoga kamu ingat bahwa kamu nggak sendirian.
+
+            <br><br>
+
+            Aku akan selalu berharap hal-hal baik
+            datang ke hidup kamu.
+
+            <br><br>
+
+            Dan kalau boleh jujur...
+
+            <br><br>
+
+            <span class="highlight">
+                Aku senang bisa punya kamu. 💕
+            </span>
+
+            <br><br>
+
+            Semoga kita bisa terus membuat banyak
+            kenangan indah bersama.
+
+            <br><br>
+
+            Aku nggak tahu bagaimana cerita kita
+            di masa depan.
+
+            <br><br>
+
+            Tapi untuk hari ini...
+
+            <br><br>
+
+            <span class="highlight">
+                Aku bahagia karena ada kamu. 🥹❤️
+            </span>
+
+        </div>
+
+        <button onclick="anotherSurprise()">
+            MASIH ADA LAGI 😳
+        </button>
+
+        <div class="extra" id="extra">
+
+            <b>Pesan terakhir buat kamu 💌</b>
+
+            <br><br>
+
+            Jangan lupa tersenyum hari ini. 😊
+
+            <br>
+
+            Karena tanpa kamu sadari,
+            senyum kamu bisa membuat hari seseorang
+            menjadi jauh lebih baik.
+
+            <br><br>
+
+            Tetap jadi diri kamu sendiri,
+            karena aku suka kamu bukan karena
+            kamu harus menjadi orang lain.
+
+            <br><br>
+
+            <span class="highlight">
+                I love you. ❤️
+            </span>
+
+        </div>
+
+        <div class="signature">
+            Dari seseorang yang sayang dan peduli sama kamu 💗
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+function openSurprise(){
+
+    document.getElementById("start")
+    .classList.add("hidden");
+
+    createHearts();
+    createConfetti();
+
+}
+
+function createHearts(){
+
+    setInterval(()=>{
+
+        const heart = document.createElement("div");
+
+        heart.className="floating-heart";
+
+        const hearts=[
+            "❤️","💗","💖","💕","💓","💞","💘"
+        ];
+
+        heart.innerHTML =
+            hearts[Math.floor(Math.random()*hearts.length)];
+
+        heart.style.left =
+            Math.random()*100+"vw";
+
+        heart.style.fontSize =
+            (15+Math.random()*25)+"px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },6000);
+
+    },500);
+
+}
+
+function createConfetti(){
+
+    for(let i=0;i<80;i++){
+
+        const c=document.createElement("div");
+
+        c.className="confetti";
+
+        c.style.left =
+            Math.random()*100+"vw";
+
+        c.style.animationDelay =
+            Math.random()*2+"s";
+
+        document.body.appendChild(c);
+
+        setTimeout(()=>{
+            c.remove();
+        },5000);
+
+    }
+
+}
+
+function anotherSurprise(){
+
+    document.getElementById("extra").style.display="block";
+
+    createConfetti();
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
